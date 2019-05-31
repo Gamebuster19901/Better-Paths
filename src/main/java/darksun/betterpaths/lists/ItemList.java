@@ -16,15 +16,14 @@ public class ItemList
 	public static void registerItems(IForgeRegistry<Item> registry)
 	{
 		// build tutorial item
-		tutorial_item = new Item(category);
-		tutorial_item.setRegistryName(RegistryEvents.location("tutorial_item"));
+		tutorial_item = new Item(category)
+				.setRegistryName(RegistryEvents.location("tutorial_item"));
 		
 		// build path block item
-		stone_path_block = new ItemBlock(BlockList.stone_path_block, category);
-		stone_path_block.setRegistryName(BlockList.stone_path_block.getRegistryName());
+		stone_path_block = new ItemBlock(BlockList.stone_path_block, category)
+				.setRegistryName(BlockList.stone_path_block.getRegistryName());
 		
 		// register items
-		registry.register(tutorial_item);
-		registry.register(stone_path_block);
+		registry.registerAll(tutorial_item, stone_path_block);
 	}
 }

@@ -56,5 +56,4 @@ public class StonePath extends BlockCarpet
 		player.motionX *= SPEED_FACTOR;
 		player.motionZ *= SPEED_FACTOR;
 	}
-	
 }

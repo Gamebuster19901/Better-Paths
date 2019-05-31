@@ -16,6 +16,6 @@ public class BlockList
 		stone_path_block.setRegistryName(RegistryEvents.location("stone_path_block"));
 		
 		// register blocks
-		registry.register(stone_path_block);
+		registry.registerAll(stone_path_block);
 	}
 }
